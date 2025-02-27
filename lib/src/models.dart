@@ -148,7 +148,7 @@ class GeoJsonFeature<T> {
         break;
       case GeoJsonFeatureType.geometryCollection:
         total =
-            ((geometry as GeoJsonGeometryCollection?)?.geometries?.length) ?? 0;
+            (geometry as GeoJsonGeometryCollection?)?.geometries?.length ?? 0;
     }
     return total;
   }
